@@ -12,7 +12,6 @@ import {
 
 import { Button } from "react-native-elements";
 
-
 import styles from "./styles";
 
 
@@ -26,7 +25,7 @@ const apiusuario = {
 function Login({ navigation }) {
   function autenticacao() {
     if (apiusuario.email === email && apiusuario.senha === senha) {
-      navigation.navigate("Modulos");
+      navigation.navigate("Videos");
     } else {
       Alert.alert("E-mail ou Senha Inválido!", "Tente novamente!");
     }
@@ -47,14 +46,18 @@ function Login({ navigation }) {
               source={require("../../../assets/marca.png")}
               style={styles.logo}
             ></Image>
-          </View>
-
+          </View>      
+       
+      
           <TextInput
             style={styles.input}
             placeholder="Seu e-mail"
+            inlineImageLeft='at'            
             value={email}
             onChangeText={(text) => setEmail(text)}
           ></TextInput>
+         
+   
 
           <TextInput
             style={styles.input}

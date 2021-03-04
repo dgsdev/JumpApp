@@ -1,4 +1,6 @@
-rootProject.name = 'fullstack'
+rootProject.name = 'JumpApp'
+
+apply from: '../node_modules/react-native-unimodules/gradle.groovy'; includeUnimodulesProjects()
 
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 includeUnimodulesProjects()

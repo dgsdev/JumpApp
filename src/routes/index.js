@@ -2,21 +2,21 @@ import React from "react";
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
 
 import Login from "../screens/Login";
-import Modulos from "../screens/Modulos";
-import About from "../screens/About";
+import Videos from "../screens/Videos";
+import Home from "../screens/Home";
 
 const Rotas = {
   Login: {
     nome: "Login",
     screen: Login,
   },
-  Modulos: {
-    nome: "Modulos",
-    screen: Modulos,
+  Videos: {
+    nome: "Videos",
+    screen: Videos,
   },
-  About: {
-    nome: "About",
-    screen: About,
+  Home: {
+    nome: "Home",
+    screen: Home,
   },
 };
 

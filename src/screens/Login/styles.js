@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   caixa: {
     height: Platform.OS === "web" ? "100vh" : "100%",
   },
-  container: { 
+  container: {    
     padding: 30,
     color: "#fff",
     backgroundColor: "#2a8994",
@@ -65,7 +65,26 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 10,
    
-  }
+  },
+  video: {
+    alignSelf: 'center',
+    borderRadius: 10,
+    width: 350,
+
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+ 
 });
 
 
